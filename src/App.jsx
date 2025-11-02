@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <BrowserRouter>
-    <Toaster position="top-right" />
+    <Toaster position="bottom-center" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
