@@ -1,57 +1,85 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"; // ✅ here
 
 function HomeComponent() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center px-6 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+    <div className="min-h-screen w-full flex items-center justify-center px-6 md:px-12 lg:px-20 bg-gradient-to-br from-slate-100 to-slate-300 dark:from-slate-900 dark:to-slate-800 transition-colors duration-300">
 
+      {/* WRAPPER */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="backdrop-blur-2xl bg-white/20 dark:bg-white/10 border border-white/40 dark:border-white/10 shadow-[0_8px_40px_rgba(0,0,0,0.18)] rounded-3xl p-10 max-w-3xl text-center"
+        transition={{ duration: 0.8 }}
+        className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
       >
 
-        <motion.h1
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15, duration: 0.6 }}
-          className="text-5xl md:text-6xl font-extrabold text-gray-800 dark:text-gray-100 mb-4 leading-tight"
-        >
-          Hi, I'm <span className="text-indigo-600 dark:text-indigo-400">Md Abu Shahma</span>
-        </motion.h1>
+        {/* LEFT — Text Content */}
+        <div className="space-y-6 text-center md:text-left">
+          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 leading-tight">
+            Hello, I'm{" "}
+            <span className="text-indigo-600 dark:text-indigo-400">
+              Md Abu Shahma
+            </span>
+          </h1>
 
-        <motion.h2
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25, duration: 0.6 }}
-          className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-6"
-        >
-          MERN Stack Developer
-        </motion.h2>
+          <h2 className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 font-medium">
+            MERN Stack Developer & AI Integrator
+          </h2>
 
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35, duration: 0.6 }}
-          className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed"
-        >
-          I build modern, scalable web applications with intuitive UI and smooth workflows.
-          Passionate about AI integration, automation systems, and clean architecture.
-        </motion.p>
+          <p className="text-slate-700 dark:text-slate-300 leading-relaxed max-w-md">
+            I build scalable full-stack applications with clean UI and smooth workflows.
+            Focused on automation, AI-powered components, and meaningful digital experiences.
+          </p>
 
+          {/* ✅ Social Icons */}
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="flex items-center justify-center md:justify-start gap-6 pt-4 text-3xl"
+          >
+            <a
+              href="https://github.com/AbuShahma022"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="www.linkedin.com/in/abu-shahma-536861225"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/17irbpzhyi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+            >
+              <FaFacebook />
+            </a>
+          </motion.div>
+        </div>
+
+        {/* RIGHT — Image */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.45, duration: 0.6 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9 }}
           className="flex justify-center"
         >
-          <Link
-            to="/about"
-            className="px-7 py-3 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            About Me
-          </Link>
+          <img
+            src="https://i.ibb.co.com/G47CR4x8/minimal-modern-workspace-elegant-soft-glass-desk.png"
+            alt="Developer Desk Illustration"
+            className="w-full max-w-md md:max-w-lg rounded-3xl shadow-[0_8px_50px_rgba(0,0,0,0.25)] object-cover"
+          />
         </motion.div>
 
       </motion.div>
