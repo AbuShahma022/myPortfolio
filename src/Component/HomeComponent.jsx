@@ -49,7 +49,7 @@ function HomeComponent() {
             </a>
 
             <a
-              href="www.linkedin.com/in/abu-shahma-536861225"
+              href="https://www.linkedin.com/in/md-abu-shahma-536861225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-700 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition"

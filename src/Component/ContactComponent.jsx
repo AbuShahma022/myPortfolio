@@ -79,7 +79,7 @@ function ContactComponent() {
             <a href="https://github.com/AbuShahma022" target="_blank" className="hover:text-sky-600 dark:hover:text-sky-400 transition">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/abu-shahma-536861225" target="_blank" className="hover:text-sky-600 dark:hover:text-sky-400 transition">
+            <a href="https://www.linkedin.com/in/md-abu-shahma-536861225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="hover:text-sky-600 dark:hover:text-sky-400 transition">
               <FaLinkedin />
             </a>
             <a href="https://www.facebook.com/share/17irbpzhyi/" target="_blank" className="hover:text-sky-600 dark:hover:text-sky-400 transition">
