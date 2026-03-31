@@ -7,8 +7,8 @@ function SkillComponent() {
   };
 
   const skills = [
-    "HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind CSS",
-    "React.js", "Redux", "Node.js", "Express.js", "MongoDB",
+    "HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS",
+    "React.js", "Next.js", "Redux", "Node.js", "Express.js", "MongoDB",
     "Git", "GitHub", "MERN Stack", "LangChain JS", "AI Integration"
   ];
 
